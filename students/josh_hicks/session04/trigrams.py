@@ -25,7 +25,7 @@ def create_trigrams_dictionary(inputFile):
     trigramList = read_file(inputFile)
     trigramListNoPunct = sanitize_input(trigramList)
     trigramDict = {}
-    for i in range(len(trigramList)):
+    for i in range(len(trigramListNoPunct)):
         trigramLine = trigramListNoPunct[i].split(' ')
         for i in range(len(trigramLine)):
             currWord = trigramLine[i]
